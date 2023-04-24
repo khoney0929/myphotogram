@@ -16,20 +16,25 @@
 ### ⚙ 구현한 기능
 ### 1. 초기 화면
 - Spring Security를 활용하여 초기 화면은 localhost:8080만 입력해도 로그인 화면이 나오도록 설정하였습니다.
+- 
 ![image](https://user-images.githubusercontent.com/120121817/233936893-140296d1-f35a-4233-afb8-2a3df272004f.png)
 ![image](https://user-images.githubusercontent.com/120121817/233936573-90f2b790-ef4a-4bfd-afe6-f21552af4dad.png)
 ### 2. 회원가입 기능 및 가입유저 Maria DB에 저장(비밀번호 암호화)
 - 가입하기 버튼을 눌러 회원가입을 진행하는 모습입니다.
+- 
 ![image](https://user-images.githubusercontent.com/120121817/233938411-39734b1a-e35f-46d1-be3f-dc57d6d84078.png)
 ![image](https://user-images.githubusercontent.com/120121817/233938579-8e32bf7c-0909-4c14-aa68-380ac7e3edb9.png)
 ---
 - 가입한 사용자의 비밀번호를 암호화 하여 보안성을 높였습니다.
+- 
 ![image](https://user-images.githubusercontent.com/120121817/233939382-20e478c8-ab5c-4a85-bf95-3b8018695fc5.png)
 ![image](https://user-images.githubusercontent.com/120121817/233939127-b0424082-c50a-445a-89c8-458a19ddca52.png)
 ### 3. 로그인 기능
 - 로그인화면에서 로그인을 시도할 때, 시큐리티에서 검증을 함.(UserDetailsService인터페이스를 구현한 PrincipalDetailsService클래스를 만들어서 loadUserByUsername매서드를 사용해 username이 있는지 검색합니다.
+- 
 ![image](https://user-images.githubusercontent.com/120121817/234082018-ccd27145-6001-4201-9724-4f3556b17ff5.png)
 - DB에서 찾은username값을 담아 PrincipalDetails에 보냅니다. 보내진 값을 바탕으로 UserDetails가 인증여부를 결정합니다.
+- 
 ![image](https://user-images.githubusercontent.com/120121817/234084121-22aa3ed1-93ed-4587-b2fa-a19ba46d4800.png)
 ### 4. 로그인이 된 화면
 - 로그인이 성공하면 기본 home 화면이 나오고 네비바를 통해 원하는 곳으로 이동할 수 있습니다.
