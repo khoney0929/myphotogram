@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <div th:insert="~{fragments/header.html}"></div>
+    <link rel="stylesheet" th:href="@{/css/update.css}">
+    <script type="text/javascript" th:src="@{/js/update.js}"></script>
+</head>
+<body>
+<main class="main">
+  <!--프로필셋팅 섹션-->
+  <section class="setting-container">
+    <!--프로필셋팅 아티클-->
+    <article class="setting__content">
+
+      <!--아이디영역-->
+      <div class="content-item__01">
+        <div class="item__img">
+          <img src="#" onerror="this.src='/images/bonobono.jpg'" />
+        </div>
+        <div class="item__username">
+          <h2 th:text="${principal.username}"></h2>
+        </div>
+      </div>
+
+      <form id="profileUpdate">
+      <div class="content-item__02">
+        <div class="item__title">이름</div>
+        <div class="item__input">
+          <input type="text" name="name" placeholder="이름"
+                 th:value="${principal.name}" />
+        </div>
+      </div>
+      <div class="content-item__03">
+        <div class="item__title">유저네임</div>
+        <div class="item__input">
+          <input type="text" name="username" placeholder="유저네임"
+                 th:value="${principal.username}" readonly="readonly" />
+        </div>
+      </div>
+      <div class="content-item__04">
+        <div class="item__title">패스워드</div>
+        <div class="item__input">
+          <input type="password" name="password" placeholder="패스워드"  />
+        </div>
+      </div>
+      <div class="content-item__05">
+        <div class="item__title">웹사이트</div>
+        <div class="item__input">
+          <input type="text" name="website" placeholder="웹 사이트"
+                 th:value="${principal.website}" />
+        </div>
+      </div>
+      <div class="content-item__06">
+        <div class="item__title">소개</div>
+        <div class="item__input">
+          <textarea name="bio" id="" rows="3" th:text="${principal.bio}"></textarea>
+        </div>
+      </div>
+      <div class="content-item__07">
+        <div class="item__title"></div>
+        <div class="item__input">
+          <span><b>개인정보</b></span> <span>비즈니스나 반려동물 등에 사용된 계정인 경우에도
+							회원님의 개인 정보를 입력하세요. 공개 프로필에는 포함되지 않습니다.</span>
+        </div>
+      </div>
+      <div class="content-item__08">
+        <div class="item__title">이메일</div>
+        <div class="item__input">
+          <input type="text" name="email" placeholder="이메일"
+                 th:value="${principal.email}" readonly="readonly" />
+        </div>
+      </div>
+      <div class="content-item__09">
+        <div class="item__title">전회번호</div>
+        <div class="item__input">
+          <input type="text" name="tel" placeholder="전화번호"
+                 th:value="${principal.phone}" />
+        </div>
+      </div>
+      <div class="content-item__10">
+        <div class="item__title">성별</div>
+        <div class="item__input">
+          <input type="text" name="gender" th:value="${principal.gender}" />
+        </div>
+      </div>
+
+
+      </form>
+      <!--프로필수정 form end-->
+    </article>
+  </section>
+</main>
+<div th:insert="~{fragments/footer.html}"></div>
+</body>
+</html>
