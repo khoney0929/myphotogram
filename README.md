@@ -7,7 +7,7 @@
 - ----
 ### 📌 기술 스택
 - Java, SpringBoot, Spring Data JPA, Spring Security
-- HTML, Bootstrap, Thymeleaf, css, javascript
+- HTML, css, Thymeleaf, javascript
 - MariaDB
 - ----
 ### 📌 JDK 버전 및 Dependency 목록
