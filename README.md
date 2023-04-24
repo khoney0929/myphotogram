@@ -38,6 +38,7 @@
 ![image](https://user-images.githubusercontent.com/120121817/234084121-22aa3ed1-93ed-4587-b2fa-a19ba46d4800.png)
 ### 4. 로그인이 된 화면
 - 로그인이 성공하면 기본 home 화면이 나오고 네비바를 통해 원하는 곳으로 이동할 수 있습니다.
+ 
 ![image](https://user-images.githubusercontent.com/120121817/234114961-9a76b8e5-49ea-40ca-a45c-25c776d6e045.png)
 ![image](https://user-images.githubusercontent.com/120121817/234125613-e5b906ae-4870-49bb-883a-7fa6244c049b.png)
 ![image](https://user-images.githubusercontent.com/120121817/234115433-a66c1e13-3395-4b22-9198-2987734e9b11.png)
