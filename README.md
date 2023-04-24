@@ -1,4 +1,4 @@
-# 🎯 Java & Spring Boot, MariaDB로 간단한 SNS웹사이트 구현하기
+# 🎯 Java & Spring Boot, MariaDB로 SNS웹사이트 구현하기
 ----
 ### 📌 MVC패턴을 활용하여구현
 - Spring Boot를 이용하여 만든 웹사이트 입니다.
